@@ -23,6 +23,11 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "No Number";
 
     // when player wins
+  } else if (guess == 143) {
+    document.querySelector(".message").textContent = "Hello Diana 😋";
+    document.querySelector("#game-field").style.backgroundColor = "#158467";
+    //document.querySelector('.number').style.width = '30rem';
+    document.querySelector(".number").textContent = secretNumber;
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "Correct Number";
     document.querySelector("#game-field").style.backgroundColor = "#158467";
