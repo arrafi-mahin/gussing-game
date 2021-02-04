@@ -15,16 +15,27 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let highScore = 0;
 let score = 20;
 document.querySelector(".check").addEventListener("click", function () {
+  const cheat = document.querySelector(".guess").value;
   const guess = Number(document.querySelector(".guess").value);
   //console.log(guess, typeof guess);
 
   // When there is no input
-  if (!guess) {
+  if (!"000" && !guess) {
     document.querySelector(".message").textContent = "No Number";
 
     // when player wins
-  } else if (guess == 143) {
+  } else if (cheat == "143") {
     document.querySelector(".message").textContent = "Hello Diana 😋";
+    document.querySelector("#game-field").style.backgroundColor = "#158467";
+    //document.querySelector('.number').style.width = '30rem';
+    document.querySelector(".number").textContent = secretNumber;
+  } else if (cheat == "000") {
+    document.querySelector(".message").textContent = "Hello Aqib 😋";
+    document.querySelector("#game-field").style.backgroundColor = "#158467";
+    //document.querySelector('.number').style.width = '30rem';
+    document.querySelector(".number").textContent = secretNumber;
+  } else if (cheat == "001") {
+    document.querySelector(".message").textContent = "Hello Jamil 😋";
     document.querySelector("#game-field").style.backgroundColor = "#158467";
     //document.querySelector('.number').style.width = '30rem';
     document.querySelector(".number").textContent = secretNumber;
