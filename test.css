@@ -1,0 +1,64 @@
+.number {
+  font-size: 60px;
+  font-weight: 50px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(56, 56, 56);
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#game-field {
+  background-color: rgb(60, 223, 168);
+  padding: 3%;
+  margin-top: 20px;
+  margin-left: 7%;
+  margin-right: 7%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07),
+    0 6px 5px 0 rgba(32, 32, 32, 0.07);
+  /* text-align: center; */
+}
+.section-2 {
+  margin-top: 10px;
+}
+.guess {
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+  width: auto;
+  height: 40px;
+}
+.check {
+  background-color: #16697a !important;
+  width: auto;
+  border-radius: 0px 0px 5px 5px !important;
+  width: 179px;
+  border: none !important;
+}
+
+.label {
+  color: white;
+  font-size: 40px;
+  /* float: left; */
+}
+.again {
+  background-color: tomato !important;
+  height: 40px;
+  width: 230px;
+  border: none !important;
+}
+.content-right {
+  border-left: 5px solid white;
+  margin-left: -15px;
+}
+.content-inner {
+  padding-left: 100px;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+.btn:hover {
+  background-color: #00000059 !important;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+  <body>
+    <section class="bg-dark text-white" id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center pt-2">
+            <h3>Guess The Number</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="game-field">
+      <div class="game-field1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <span class="number text-center py-4">?</span>
+            </div>
+          </div>
+          <div class="row py-4 d-flex section-2">
+            <div class="col-md-6 text-center align-self-center">
+              <div class="justify-content-center">
+                <input type="number" class="guess" />
+              </div>
+              <div class="btn btn-primary check">Check</div>
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-12 justify-content-start content-right">
+                <div class="content-inner">
+                  <p class="label font-weight-bold">
+                    <span class="message">Start guessing...</span>
+                  </p>
+                  <p class="label-score label font-weight-bold">
+                    Score: <span class="score">20</span>
+                  </p>
+                  <p class="label-highscore label font-weight-bold">
+                    Highscore: <span class="highscore">0</span>
+                  </p>
+                  <div class="btn btn-primary again">Again</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
