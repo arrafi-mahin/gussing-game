@@ -20,7 +20,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
   // When there is no input
   if (!guess) {
-    document.querySelector(".message").textContent = "😒 No Number";
+    document.querySelector(".message").textContent = "No Number";
 
     // when player wins
   } else if (guess === secretNumber) {
@@ -40,7 +40,8 @@ document.querySelector(".check").addEventListener("click", function () {
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      document.querySelector(".message").textContent = "💣 You lost the game.";
+      document.querySelector(".message").textContent = "You lost the game.";
+      document.querySelector("#game-field").style.backgroundColor = "#af2d2d";
       document.querySelector(".score").textContent = 0;
     }
 
@@ -51,7 +52,8 @@ document.querySelector(".check").addEventListener("click", function () {
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      document.querySelector(".message").textContent = "💣 You lost the game.";
+      document.querySelector(".message").textContent = "You lost the game.";
+      document.querySelector("#game-field").style.backgroundColor = "#af2d2d";
       document.querySelector(".score").textContent = 0;
     }
   }

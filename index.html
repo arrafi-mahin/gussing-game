@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guessing Game</title>
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="test2.css" />
     <link rel="stylesheet" href="bootstrap.css" />
   </head>
   <body>
@@ -17,7 +17,47 @@
         </div>
       </div>
     </section>
+
     <section id="game-field">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <span class="number">?</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row game-body">
+          <div class="col-md-5 align-self-center">
+            <div class="row left-content">
+              <div class="col-md-12 text-center">
+                <input type="number" class="guess" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <button class="btn btn-outline-primary check">Check</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 text-center"></div>
+          <div class="col-md-5 content-right">
+            <p class="label message">Guess the Number...</p>
+            <p class="label">Score: <span class="score">20</span></p>
+            <p class="label">High Score: <span class="highscore">0</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button class="btn btn-primary again">Play Again</button>
+            <p class="info">(Chose Number between 1 to 20)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="game-field">
       <div class="game-field1">
         <div class="container">
           <div class="row">
@@ -33,8 +73,8 @@
               <div class="btn btn-primary check">Check</div>
             </div>
             <div class="col-md-6">
-              <div class="col-md-12 justify-content-start content-right">
-                <div class="content-inner">
+              <div class="col-md-12 justify-content-start">
+                <div class="content-inner content-right">
                   <p class="label font-weight-bold">
                     <span class="message">Start guessing...</span>
                   </p>
@@ -51,7 +91,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="script.js"></script>
   </body>

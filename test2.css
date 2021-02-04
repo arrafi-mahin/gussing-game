@@ -1,0 +1,72 @@
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: none !important;
+}
+
+#game-field {
+  background-color: turquoise;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 700px;
+  max-height: 800px;
+}
+
+.number {
+  background-color: white;
+  color: rgb(51, 51, 51);
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.game-body {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: white 2px solid;
+}
+.content-left {
+  padding-top: 20px;
+}
+.content-right {
+  padding-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+.guess {
+  border: none !important;
+  border-radius: 7px 0px 0px 0px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+.btn-outline-primary {
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid white !important;
+  border-radius: 0px 0px 7px 0px !important;
+  width: 200px;
+}
+.btn-outline-primary:hover {
+  color: rgb(255, 255, 255) !important;
+  border: none !important;
+  border-radius: 0px 0px 7px 0px !important;
+  width: 200px;
+  background-color: tomato !important;
+}
+.again {
+  margin-top: 10px;
+}
+.btn-primary {
+  color: rgb(255, 255, 255) !important;
+  background-color: tomato !important;
+  border: none !important;
+  border-radius: 7px 0px 7px 0px !important;
+  width: 200px;
+}
+.info {
+  padding-top: 20px;
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
