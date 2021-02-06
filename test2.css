@@ -11,6 +11,7 @@ select:focus {
   padding: 30px;
   max-width: 700px;
   max-height: 800px;
+  z-index: 2;
 }
 
 .number {
@@ -69,4 +70,34 @@ select:focus {
   margin: 0;
   color: white;
   font-size: 20px;
+}
+
+#modal {
+}
+.greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  color: white;
+  background-color: red;
+  padding: 2rem;
+
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
