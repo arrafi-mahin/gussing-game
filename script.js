@@ -65,8 +65,8 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".greeting").style.backgroundColor = "#158467";
     modalShow("Congratulations", "You Win");
 
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !modal1.classList.contains("hidden")) {
+    document.addEventListener("keydown", function () {
+      if (!modal1.classList.contains("hidden")) {
         closeModal();
       }
     });
