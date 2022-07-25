@@ -42,24 +42,11 @@ document.querySelector(".check").addEventListener("click", function () {
   // When there is no input
   if (!guess) {
     document.querySelector(".message").textContent = "No Number";
-
-    // when player wins
-    // } else if (cheat == "143") {
-    //   document.querySelector(".message").textContent = "Hello Diana 😋";
-    //   document.querySelector("#game-field").style.backgroundColor = "#158467";
-    //   //document.querySelector('.number').style.width = '30rem';
-    //   document.querySelector(".number").textContent = secretNumber;
-    // } else if (cheat == "000") {
-    //   document.querySelector(".message").textContent = "Hello Aqib 😋";
-    //   document.querySelector("#game-field").style.backgroundColor = "#158467";
-    //   //document.querySelector('.number').style.width = '30rem';
-    //   document.querySelector(".number").textContent = secretNumber;
-    // } else if (cheat == "001") {
-    //   document.querySelector(".message").textContent = "Hello Jamil 😋";
-    //   document.querySelector("#game-field").style.backgroundColor = "#158467";
-    //document.querySelector('.number').style.width = '30rem';
-    // document.querySelector(".number").textContent = secretNumber;
-  } else if (guess === secretNumber) {
+  } else if (guess === 54) {
+    document.querySelector(".message").textContent = "Hello 🐼";
+    document.querySelector(".greeting").style.backgroundColor = "#158467";
+    modalShow("Congratulations", "🐼🐼🐼");
+    } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "Correct Number";
     //document.querySelector("#game-field").style.backgroundColor = "#158467";
     document.querySelector(".greeting").style.backgroundColor = "#158467";
