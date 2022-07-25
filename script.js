@@ -99,7 +99,7 @@ document.querySelector(".check").addEventListener("click", function () {
       modalShow("Opps..", "You lost the game.");
 
       document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && !modal1.classList.contains("hidden")) {
+        if (e.key === "Escape" || 'click' && !modal1.classList.contains("hidden")) {
           closeModal();
         }
       });
